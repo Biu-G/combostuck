@@ -1,2 +1,4 @@
 smali改了Data和Record
 Data upload前调用Record的fake
+必须要伪造JSON文件！！！
+服务器不看DISTANCE只看JSON！（应该还要看JSON的数据在指定区域）
