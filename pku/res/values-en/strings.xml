@@ -42,7 +42,7 @@ Weather\u0009%s
 Wind\u0009%s
 Air condition\u0009%s
 Suggestion\u0009%s\u0009%s"</string>
-    <string name="app_name">PKURunner</string>
+    <string name="app_name">PKUHacker</string>
     <string name="d_token_invalid_dialog_content">Sorry, but your session has expired, which may very likely result from a second device logging to PKURunner. You can choose to log out the account and log in again, or you can upload any record to be uploaded to re-activate your account.</string>
     <string name="d_token_invalid_dialog_positive_button">Okay</string>
     <string name="d_token_invalid_dialog_title">Your session has been invalid!</string>
