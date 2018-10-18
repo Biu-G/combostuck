@@ -1334,37 +1334,90 @@
 
     .line 213
     :try_start_0
-    invoke-virtual {p0}, Lcn/edu/pku/pkurunner/Model/Record;->getTrack()Ljava/util/ArrayList;
 
-    move-result-object v1
+    const-wide v2,0x405d13bc710cb288L
+    const-wide v4,0x405d13e7ced92233L
+    const-wide v6,0x4043ff3355786435L
+    const-wide v8,0x4043ff7802546324L
+    const v10,0x0
+  
 
-    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
-    move-result-object v1
-
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lcn/edu/pku/pkurunner/Model/Point;
-
+    const v11,0x0    
+    new-instance v1, Lcn/edu/pku/pkurunner/Model/Point;
+    invoke-direct{v1}, Lcn/edu/pku/pkurunner/Model/Point;-><init>()V
+    invoke-virtual{v1,v10}, Lcn/edu/pku/pkurunner/Model/Point;->setId(I)V
+    invoke-virtual{v1,v10}, Lcn/edu/pku/pkurunner/Model/Point;->setRecordDbId(I)V
+    invoke-virtual{v1,v10}, Lcn/edu/pku/pkurunner/Model/Point;->setStatus(I)V
+    invoke-virtual{v1,v11}, Lcn/edu/pku/pkurunner/Model/Point;->setSequence(I)V
+    invoke-virtual{v1},Lcn/edu/pku/pkurunner/Model/Point;->setLatitudeS()V
+    invoke-virtual{v1},Lcn/edu/pku/pkurunner/Model/Point;->setLongitudeS()V
+   
     .line 214
-    invoke-virtual {v2}, Lcn/edu/pku/pkurunner/Model/Point;->toJSONArray()Lorg/json/JSONArray;
+    invoke-virtual {v1}, Lcn/edu/pku/pkurunner/Model/Point;->toJSONArray()Lorg/json/JSONArray;
 
-    move-result-object v2
+    move-result-object v1
 
-    invoke-virtual {v0, v2}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
+    invoke-virtual {v0, v1}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
+
+
+    const v11,0x1    
+    new-instance v1, Lcn/edu/pku/pkurunner/Model/Point;
+    invoke-direct{v1}, Lcn/edu/pku/pkurunner/Model/Point;-><init>()V
+    invoke-virtual{v1,v10}, Lcn/edu/pku/pkurunner/Model/Point;->setId(I)V
+    invoke-virtual{v1,v10}, Lcn/edu/pku/pkurunner/Model/Point;->setRecordDbId(I)V
+    invoke-virtual{v1,v10}, Lcn/edu/pku/pkurunner/Model/Point;->setStatus(I)V
+    invoke-virtual{v1,v11}, Lcn/edu/pku/pkurunner/Model/Point;->setSequence(I)V
+    invoke-virtual{v1},Lcn/edu/pku/pkurunner/Model/Point;->setLatitudeB()V
+    invoke-virtual{v1},Lcn/edu/pku/pkurunner/Model/Point;->setLongitudeS()V
+   
+    .line 214
+    invoke-virtual {v1}, Lcn/edu/pku/pkurunner/Model/Point;->toJSONArray()Lorg/json/JSONArray;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
+
+
+    const v11,0x2    
+    new-instance v1, Lcn/edu/pku/pkurunner/Model/Point;
+    invoke-direct{v1}, Lcn/edu/pku/pkurunner/Model/Point;-><init>()V
+    invoke-virtual{v1,v10}, Lcn/edu/pku/pkurunner/Model/Point;->setId(I)V
+    invoke-virtual{v1,v10}, Lcn/edu/pku/pkurunner/Model/Point;->setRecordDbId(I)V
+    invoke-virtual{v1,v10}, Lcn/edu/pku/pkurunner/Model/Point;->setStatus(I)V
+    invoke-virtual{v1,v11}, Lcn/edu/pku/pkurunner/Model/Point;->setSequence(I)V
+    invoke-virtual{v1},Lcn/edu/pku/pkurunner/Model/Point;->setLatitudeB()V
+    invoke-virtual{v1},Lcn/edu/pku/pkurunner/Model/Point;->setLongitudeB()V
+   
+    .line 214
+    invoke-virtual {v1}, Lcn/edu/pku/pkurunner/Model/Point;->toJSONArray()Lorg/json/JSONArray;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
+
+    const v11,0x3    
+    new-instance v1, Lcn/edu/pku/pkurunner/Model/Point;
+    invoke-direct{v1}, Lcn/edu/pku/pkurunner/Model/Point;-><init>()V
+    invoke-virtual{v1,v10}, Lcn/edu/pku/pkurunner/Model/Point;->setId(I)V
+    invoke-virtual{v1,v10}, Lcn/edu/pku/pkurunner/Model/Point;->setRecordDbId(I)V
+    invoke-virtual{v1,v10}, Lcn/edu/pku/pkurunner/Model/Point;->setStatus(I)V
+    invoke-virtual{v1,v11}, Lcn/edu/pku/pkurunner/Model/Point;->setSequence(I)V
+    invoke-virtual{v1},Lcn/edu/pku/pkurunner/Model/Point;->setLatitudeS()V
+    invoke-virtual{v1},Lcn/edu/pku/pkurunner/Model/Point;->setLongitudeB()V
+   
+    .line 214
+    invoke-virtual {v1}, Lcn/edu/pku/pkurunner/Model/Point;->toJSONArray()Lorg/json/JSONArray;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
+
+
+    
+
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_1
-
-    goto :goto_0
 
     .line 220
     :cond_0

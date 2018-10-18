@@ -122,6 +122,37 @@
     return-void
 .end method
 
+
+.method public constructor <init>(IIDD)V
+    .locals 1
+
+    .line 123
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
+
+    .line 124
+    iput v0, p0, Lcn/edu/pku/pkurunner/Model/Point;->id:I
+
+    .line 125
+    iput p1, p0, Lcn/edu/pku/pkurunner/Model/Point;->sequence:I
+
+    .line 126
+    iput p2, p0, Lcn/edu/pku/pkurunner/Model/Point;->recordDbId:I
+
+    .line 127
+    iput-wide p5, p0, Lcn/edu/pku/pkurunner/Model/Point;->latitude:D
+
+    .line 128
+    iput-wide p3, p0, Lcn/edu/pku/pkurunner/Model/Point;->longitude:D
+
+    .line 129
+    iput v0, p0, Lcn/edu/pku/pkurunner/Model/Point;->status:I
+
+    return-void
+.end method
+
+
 .method public constructor <init>(Lcom/amap/api/maps2d/model/LatLng;)V
     .locals 3
 
@@ -310,6 +341,47 @@
 
     return-void
 .end method
+
+.method public setLongitudeS()V
+    .locals 2
+
+    .line 77
+    const-wide v0,0x405d13bc710cb288L
+    iput-wide v0, p0, Lcn/edu/pku/pkurunner/Model/Point;->longitude:D
+
+    return-void
+.end method
+
+.method public setLongitudeB()V
+    .locals 2
+
+    .line 77
+    const-wide v0,0x405d13e7ced92233L
+    iput-wide v0, p0, Lcn/edu/pku/pkurunner/Model/Point;->longitude:D
+
+    return-void
+.end method
+
+.method public setLatitudeS()V
+    .locals 2
+
+    .line 77
+    const-wide v0,0x4043ff3355786435L
+    iput-wide v0, p0, Lcn/edu/pku/pkurunner/Model/Point;->latitude:D
+
+    return-void
+.end method
+
+.method public setLatitudeB()V
+    .locals 2
+
+    .line 77
+    const-wide v0,0x4043ff7802546324L
+    iput-wide v0, p0, Lcn/edu/pku/pkurunner/Model/Point;->latitude:D
+
+    return-void
+.end method
+
 
 .method public setLongitude(D)V
     .locals 0
