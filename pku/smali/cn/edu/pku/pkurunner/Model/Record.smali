@@ -1154,7 +1154,7 @@
 	iput v0, p0, Lcn/edu/pku/pkurunner/Model/Record;->step:I
 	const v0,0x2000
 	iput v0, p0, Lcn/edu/pku/pkurunner/Model/Record;->distance:I
-	const v0,0x200
+	const v0,0x600
 	iput v0, p0, Lcn/edu/pku/pkurunner/Model/Record;->duration:I
 	return-void
 	
