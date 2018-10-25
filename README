@@ -1,1 +1,6 @@
-NULL
+
+for others fake(change) when save to database(in Data.savetodatabase ch Record)
+
+
+for json fake(create) when upload to server(in Network.uploadtoserver ch Point)//Dont take from db!!just yourself
+//for its calculated just between points you've got .you can just make serveral! and move not smoothly
