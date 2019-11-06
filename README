@@ -1,3 +1,17 @@
+ATTENTION:
+if you're just a normal user but not a developer, follow instructions below:
+usage:
+1.git clone this repo
+2.download hacker.apk in the root directory
+3.install hacker.apk into your android phone
+4.run the installed app: push start button -> wait for a few seconds(as short as you want) -> push stop button -> upload record
+5(optional).you'll notice no matter how long you've run for actually even if for 0.5 meters, you always upload the record of 5km+
+6(optional).to vertify the record if you don't believe: uninstall this hacked app and install an official pku runner instead, you'll still
+receive the fake records you've created on the hacked app. So that means what is fake is not dependent on the version of app but is already
+printed on server. Hack successfully! You saved the time wasted on running meaninglessly.
+
+
+for developers only:
 
 for others fake(change) when save to database(in Data.savetodatabase ch Record)
 
